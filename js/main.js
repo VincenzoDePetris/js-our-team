@@ -38,7 +38,7 @@ for (persone of team) {
   teamPerson.innerHTML += `
   <div> ${persone.name} </div>
   <div> ${persone.role} </div>
-  <div> ${persone.photo} </div>`;
+  <div><img src=".//img/${persone.photo}" alt="person"></div>`;
 }
 
 
