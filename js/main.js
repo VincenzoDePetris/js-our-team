@@ -33,8 +33,13 @@ const team = [
 
 const teamPerson = document.getElementById("team-container");
 
-for (persone in team) {
-  console.log(team[persone]);
-  document.write(team[persone])
+for (persone of team) {
+  console.log(persone); 
+  teamPerson.innerHTML += `
+  <div> ${persone.name} </div>
+  <div> ${persone.role} </div>
+  <div> ${persone.photo} </div>`;
 }
+
+
 
