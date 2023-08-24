@@ -1,1 +1,8 @@
+.carte{
+  margin: 20px;
+  width: calc(100% / 3 - 40px);
+}
 
+.container {
+  text-align: center;
+}

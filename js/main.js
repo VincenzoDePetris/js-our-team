@@ -36,9 +36,15 @@ const teamPerson = document.getElementById("team-container");
 for (persone of team) {
   console.log(persone); 
   teamPerson.innerHTML += `
-  <div> ${persone.name} </div>
-  <div> ${persone.role} </div>
-  <div><img src=".//img/${persone.photo}" alt="person"></div>`;
+  <div class="card carte" style="width: 18rem;">
+    <img src=".//img/${persone.photo}" class="card-img-top" alt="person">
+    <div class="card-body">
+      <h5 class="card-title">${persone.name}</h5>
+      <p class="card-text"> ${persone.role}</p>
+     
+    </div>
+  </div>
+ `;
 }
 
 
