@@ -31,6 +31,10 @@ const team = [
   },
 ];
 
-for (value in team) {
-  console.log(team[value]);
+const teamPerson = document.getElementById("team-container");
+
+for (persone in team) {
+  console.log(team[persone]);
+  document.write(team[persone])
 }
+
